@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>guess the number</title>
+	<style>body{background-image: url(images/kisspng-design-thinking-management-innovation-marketing-design-thinking-vs-design-thinkers-what-is-the-di.png);background-color: #6c7579;background-size: 700px 350px;background-repeat:no-repeat;background-attachment: fixed;background-position: 99% 100%;}h1{color: #f6c80e;font-size: 100px;font-family: monospace;margin: 0px;text-shadow: 2px 2px 4px  #660d47;}button{font-style: monospace;width: 200px;position: fixed;top: 250px;font-size: 50px;font-weight: 600;background-color: whitesmoke;color: #660d47;border: none;border-radius: 5px;box-shadow: 2px 2px 2px 2px #660d47;}button:hover{background-color: #660d47;color: whitesmoke;box-shadow: 2px 2px 2px 2px #f6c80e;}</style>
+</head>
+<body>
+
+		<!-- <h1 id="h"></h1> -->
+	<script>
+		var hd1 = document.createElement("h1");
+		hd1.id = "h";
+		document.body.appendChild(hd1);
+		document.getElementById("h").innerHTML = "Think about a number."
+		var button = document.createElement("button");
+		button.innerHTML = "Next";
+		var body = document.getElementsByTagName("body")[0];
+		body.appendChild(button);
+		let x = Math.floor(Math.random() * 10);
+		button.addEventListener("click",function(){
+			document.getElementById("h").innerHTML = "Now double the nmber.";
+			button.addEventListener("click",function(){
+			document.getElementById("h").innerHTML = "Now add '"+x+"' to this number.";
+			button.addEventListener("click",function(){
+			document.getElementById("h").innerHTML = "Just half the number.";
+			button.addEventListener("click",function(){
+			document.getElementById("h").innerHTML = "Subtract the number you have thinked earlier.";
+			button.addEventListener("click",function(){
+			document.getElementById("h").innerHTML = "The answer is: press Enter";
+			button.addEventListener("click",function(){
+			document.getElementById("h").innerHTML = x/2;
+			button.innerHTML = "play again";
+					button.addEventListener("click",function(){
+					window.open("D:/Code/HTML/JavaScript/guess the number.html");
+		});
+		});
+		});
+		});
+		});
+		});
+		});
+
+	</script>
+</body>
+</html>
